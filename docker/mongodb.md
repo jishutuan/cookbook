@@ -1,17 +1,16 @@
 # MongoDB 安装及使用
 
-## 环境及版本
+## 依赖版本
 
 - Centos 7.3
-- [MongoDB 4.0.5 镜像](https://hub.docker.com/_/mongo/)
+- [MongoDB 4.0.5](https://hub.docker.com/_/mongo/)
 - Docker 18.06.1-ce
-- Docker 官方镜像
 
-## 安装
+## 安装与配置
 
 ### 1. 拉取镜像并启动容器
 
-``` bash
+```bash
 # 拉取镜像
 docker pull mongo:4.0.5-xenial
 # host机创建目录，用于保存mongo数据
@@ -63,4 +62,3 @@ db.createUser({ user: 'test', pwd: '123456', roles: [{ role: "readWrite", db: "t
 ## 附录
 
 - [配置文件 `mongod.conf`](https://docs.mongodb.com/manual/reference/configuration-options/)
-

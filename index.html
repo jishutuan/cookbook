@@ -20,17 +20,32 @@
       window.$docsify = {
         // 文档标题，会显示在侧边栏顶部。
         name: "cookbook",
+
         // 配置仓库地址或者 username/repo 的字符串，会在页面右上角渲染一个 GitHub Corner 挂件。
         repo: "",
+
         // 替换主题色。利用 CSS3 支持变量的特性，对于老的浏览器有 polyfill 处理。
         themeColor: "#0084FF",
+
         // 加载自定义侧边栏，参考多页文档。设置为 true 后会加载 _sidebar.md 文件，也可以自定义加载的文件名。
         loadSidebar: true,
+
         // 自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能。
-        subMaxLevel: 2
+        subMaxLevel: 2,
+
+        // 完整配置参数
+        search: {
+          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+          paths: "auto",
+          placeholder: "搜索",
+          noData: "暂无数据",
+          depth: 3
+        }
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   </body>
 </html>
