@@ -3,6 +3,8 @@
 ## 安装 Docker CE
 
 > 基于Centos 7.3 64位
+>
+> 使用 daocloud.io 安装源
 
 1. 安装所需的软件包。
 
