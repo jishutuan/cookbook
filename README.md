@@ -12,6 +12,14 @@ cookbook 是记录各项技术实践过程的笔记。完整记录每项技术�
 
 - 超长 linux 命令使用"反斜杠"续行，确保命令在一屏内，无横向滚动条
 
+错误示例：
+
+```bash
+sudo yum-config-manager --add-repo https://download.daocloud.io/docker/linux/centos/docker-ce.repo
+```
+
+正确示例：
+
 ```bash
 sudo yum-config-manager \
 --add-repo https://download.daocloud.io/docker/linux/centos/docker-ce.repo
